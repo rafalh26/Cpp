@@ -1,41 +1,7 @@
 #include <iostream>
 #include <string>
+#include "Building.h"
 using namespace std;
-
-class Building
-{
-public:
-	void setWindows(int numWindows)
-	{
-		this->numWindows = numWindows;
-	}
-	void setStories(int numStories)
-	{
-		this->numStories = numStories;
-	}
-	void setColor(string color)
-	{
-		this->color = color;
-	}
-	int getWindows() const
-	{
-		return numWindows;
-	}
-	int getStrories() const
-	{
-		return numStories;
-	}
-	string getColor() const
-	{
-		return color;
-	}
-
-
-private:
-	string color = "";
-	int numWindows = 0;
-	int numStories = 0;
-};
 
 void printBuilding(const Building& newBuilding);
 
