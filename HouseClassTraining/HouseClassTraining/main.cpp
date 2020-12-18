@@ -59,7 +59,7 @@ int main()
 
 	return 0;
 }
-
+	//block access to fields	//pass just object by ref not all fields...
 void printBuilding(const Building& newBuilding)
 {
 	cout << newBuilding.getColor() << " building with " << newBuilding.getStrories() << " Stories and " << newBuilding.getWindows() << " windows\n";
