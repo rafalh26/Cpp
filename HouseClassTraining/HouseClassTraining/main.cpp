@@ -37,7 +37,7 @@ private:
 	int numStories = 0;
 };
 
-void printBuilding(Building newBuilding);
+void printBuilding(const Building& newBuilding);
 
 int main()
 {
@@ -60,7 +60,7 @@ int main()
 	return 0;
 }
 
-void printBuilding(Building newBuilding)
+void printBuilding(const Building& newBuilding)
 {
 	cout << newBuilding.getColor() << " building with " << newBuilding.getStrories() << " Stories and " << newBuilding.getWindows() << " windows\n";
 }
