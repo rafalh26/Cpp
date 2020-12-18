@@ -1,3 +1,5 @@
+#ifndef BUILDING_H
+#define BUILDING_H
 #include<string>
 using namespace std;
 
@@ -20,3 +22,5 @@ private:
 	int numWindows = 0;
 	int numStories = 0;
 };
+
+#endif
