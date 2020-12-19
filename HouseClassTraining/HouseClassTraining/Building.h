@@ -7,15 +7,18 @@ class Building
 {
 public:
 
-	void setWindows(int numWindows);
-	void setStories(int numStories);
+	Building();
+	~Building();
+	
+	void setNumStories(int numStories);
 	void setColor(string color);
+	void setNumWindows(int numWindows);
 
-	int getWindows() const;
-	int getStrories() const;
-	string getColor() const;
+	int getNumStories();
+	int getNumWindows();
+	string getColor();
 
-
+	void print();
 
 private:
 	string color = "";
