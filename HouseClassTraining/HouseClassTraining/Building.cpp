@@ -3,11 +3,18 @@
 
 Building::Building()
 {
-	cout << "test " << color << " have " << numWindows << " windows and" << numStories << "Stories\n";
+
+}
+
+Building::Building(int numStories, int numWindows, string color)
+{
+	this -> numStories = numStories;
+	this -> numWindows = numWindows;
+	this -> color = color;
 }
 Building::~Building()
 {
-
+	cout << "test " << color << " have " << numWindows << " windows and " << numStories << " Stories are being removed\n";
 }
 void Building::setNumStories(int numStories)
 {

@@ -7,6 +7,8 @@ class Building
 {
 public:
 
+	
+	Building(int numStories, int numWindows, string color);
 	Building();
 	~Building();
 	
@@ -21,9 +23,9 @@ public:
 	void print();
 
 private:
-	string color = "";
-	int numWindows = 0;
-	int numStories = 0;
+	string color = "default";
+	int numWindows = 999;
+	int numStories = 999;
 };
 
 #endif
