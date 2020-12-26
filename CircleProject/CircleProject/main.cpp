@@ -9,7 +9,7 @@ void printData(Circle& anyCircle);
 int main()
 {
 	Circle nr1;
-	Circle nr2(20);
+	Circle nr2(5);
 
 	printData(nr1);
 	printData(nr2);

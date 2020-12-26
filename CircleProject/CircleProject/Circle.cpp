@@ -36,5 +36,5 @@ double Circle::circumference()
 }
 double Circle::area()
 {
-	return (2 * pow(radius,2));
+	return numberPi * pow(radius,2);
 }
