@@ -4,15 +4,17 @@ using namespace std;
 
 int main()
 {
-	const int ARR_SIZE = 5;
-	int* myArray = new int[ARR_SIZE];
+	int input;
+	cout << "what size of array u want:\n";
+	cin >> input;
+	int* myArray = new int[input];
 
-	for (int i = 0; i < ARR_SIZE; i++)
+	for (int i = 0; i < input; i++)
 	{
 		myArray[i] = i * 2;
 	}
 
-	for (int i = 0; i < ARR_SIZE; i++)
+	for (int i = 0; i < input; i++)
 	{
 		cout <<myArray[i] << endl;
 	}
