@@ -24,13 +24,15 @@ int main()
 	}
 	int tmpSize = *size;
 	int tmpI = tmpSize;
-	for (tmpSize;tmpI<tmpSize && tmpI>=0;tmpI--)
-	{
-		cout << "test value size:" << *size << endl;
-		cout << "test value i:" << tmpI << endl;
-		delete tableOfCircles[tmpI];               //error out of range!
-		tableOfCircles[tmpI] = nullptr;		      //error out of range!
-	}
+	//for (tmpSize;tmpI<tmpSize && tmpI>=0;tmpI--)
+	//{
+	//	cout << "test value size:" << *size << endl;
+	//	cout << "test value i:" << tmpI << endl;
+	//	delete tableOfCircles[tmpI];               //error out of range!
+	//	tableOfCircles[tmpI] = nullptr;		      //error out of range!
+	//}
+	delete[] tableOfCircles;
+	tableOfCircles = nullptr;
 	delete size;
 	size = nullptr;
 	//Circle nr1;
