@@ -20,7 +20,7 @@ void printFormatted(ofstream& outfile, int n)
 {
 	outfile.open("output.txt");
 
-	outfile << fixed << showpoint;
+	outfile << hexfloat << showpoint;
 	cout << fixed << showpoint;
 
 	for (int i = 1; i <= n; i++)
