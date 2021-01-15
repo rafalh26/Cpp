@@ -1,0 +1,32 @@
+field is: 24.000000 perimeter is: 28.000000
+that Rect was of: 12 X 2
+field is: 40.000000 perimeter is: 28.000000
+that Rect was of: 10 X 4
+field is: 20.000000 perimeter is: 18.000000
+that Rect was of: 5 X 4
+field is: 48.000000 perimeter is: 28.000000
+that Rect was of: 6 X 8
+field is: 160.000000 perimeter is: 56.000000
+that Rect was of: 20 X 8
+field is: 60.000000 perimeter is: 32.000000
+that Rect was of: 10 X 6
+field is: 30.000000 perimeter is: 22.000000
+that Rect was of: 6 X 5
+field is: 25.000000 perimeter is: 20.000000
+that Rect was of: 5 X 5
+field is: 8.000000 perimeter is: 12.000000
+that Rect was of: 2 X 4
+field is: 9.000000 perimeter is: 20.000000
+that Rect was of: 9 X 1
+field is: 3.000000 perimeter is: 8.000000
+that Rect was of: 1 X 3
+field is: 14.000000 perimeter is: 18.000000
+that Rect was of: 2 X 7
+field is: 72.000000 perimeter is: 34.000000
+that Rect was of: 9 X 8
+field is: 144.000000 perimeter is: 48.000000
+that Rect was of: 12 X 12
+field is: 30.000000 perimeter is: 22.000000
+that Rect was of: 6 X 5
+field is: 110.000000 perimeter is: 42.000000
+that Rect was of: 10 X 11
