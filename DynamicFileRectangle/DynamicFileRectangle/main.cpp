@@ -29,6 +29,7 @@ int main()
 	}
 	readFile.close();
 	writeFile.close();
+	objPointers.clear();
 	
 	return 0;
 }
