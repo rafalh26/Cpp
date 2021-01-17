@@ -12,8 +12,8 @@ public:
 	void setName(string &name,int &whileCounter);
 	void printData();
 private:
-	vector<string> names = { "" };
-	vector<int> counters = {1};
+	vector<string> names;
+	vector<int> counters;
 };
 
 #endif
