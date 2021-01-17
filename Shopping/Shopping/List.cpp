@@ -8,6 +8,7 @@ int List::getSize()
 {
 	return names.size();
 }
+
 void List::setName(string& name, int &whileCounter)
 {
 	//initialization
@@ -19,7 +20,7 @@ void List::setName(string& name, int &whileCounter)
 
 	//actual function
 	bool isAdded = 0;
-	for (int i = 0; i < names.size(); i++)
+	for (int i = 0; i < getSize(); i++)
 	{
 		if (name.compare(names[i]) == 0)
 			isAdded = 1;
@@ -42,6 +43,7 @@ void List::setName(string& name, int &whileCounter)
 		}
 	}
 }
+
 void List::printData()
 {
 	for (int i = 0; i < getSize(); i++)
