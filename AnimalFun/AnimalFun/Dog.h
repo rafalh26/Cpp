@@ -11,6 +11,7 @@ public:
 	Dog (string name,double weight,string breed);
 	string getBreed() const;
 	string makeNoise() const;
+	string eat() const;
 	void digHole();
 	void chaseCat();
 private:

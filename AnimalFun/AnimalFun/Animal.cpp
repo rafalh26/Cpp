@@ -27,7 +27,3 @@ double Animal::getWeight()
 {
 	return weight;
 }
-string Animal::makeNoise()
-{
-	return "unknown";
-}

@@ -16,7 +16,8 @@ public:
 
 	string getName();
 	double getWeight();
-	string makeNoise();
+	virtual string makeNoise() const = 0;
+	virtual string eat() const = 0;
 private:
 	string name = "";
 	double weight = 0;
