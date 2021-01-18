@@ -14,10 +14,10 @@ int main()
 	cout<<dogPtr->eat();
 	cout << "Make noise? \t" << dogPtr->makeNoise();
 
-	//cout << myDog.getName() << " weight " << myDog.getWeight() << "\n\t" <<myDog.makeNoise()<< myDog.getBreed() << endl;
-	//myDog.digHole();
-	//myDog.chaseCat();
-	//cout << firstAnimal.getName() << " weight " << firstAnimal.getWeight() << "\n\t" << firstAnimal.makeNoise() << endl;
+	cout << myDog.getName() << " weight " << myDog.getWeight() << "\n\t" <<myDog.makeNoise()<< myDog.getBreed() << endl;
+	myDog.digHole();
+	myDog.chaseCat();
+	cout << firstAnimal.getName() << " weight " << firstAnimal.getWeight() << "\n\t" << firstAnimal.makeNoise() << endl;
 	delete dogPtr;
 	dogPtr = nullptr;
 	return 0;
