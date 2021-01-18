@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{c5f66b7b-5481-4626-a3f3-06803f97b0d7}</ProjectGuid>
-    <RootNamespace>AnimalFun</RootNamespace>
+    <ProjectGuid>{6bb03c8c-5edc-4cc9-b64e-b95b6edf08b3}</ProjectGuid>
+    <RootNamespace>RPGProject</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,15 +139,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Cat.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Animal.cpp" />
-    <ClCompile Include="Dog.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="Priest.cpp" />
+    <ClCompile Include="Mage.cpp" />
+    <ClCompile Include="Warrior.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Animal.h" />
-    <ClInclude Include="Cat.h" />
-    <ClInclude Include="Dog.h" />
+    <ClInclude Include="Warrior.h" />
+    <ClInclude Include="Priest.h" />
+    <ClInclude Include="Mage.h" />
+    <ClInclude Include="Player.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
