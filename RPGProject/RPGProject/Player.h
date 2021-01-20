@@ -1,22 +1,28 @@
 #ifndef PLAYER_H
 #define PLAYER_H
+
+#include <iostream>
 #include <string>
+
+using namespace std;
+
+enum Race { HUMAN, ELF, DWARF, ORC, TROLL };
 
 class Player
 {
 public:
 	//constr
-	Player(string name, RACE race, int hitPoints, int magicPoints);
+	Player(string name, Race race, int hitPoints, int magicPoints);
 	
 	//setters
 	void setName(string name);
-	void setRace(RACE race);
+	void setRace(Race race);
 	void setHP(int hitPoints);
 	void setMP(int magicPoints);
 
 	//getters
-	string getname() const;
-	RACE getRace() const;
+	string getName() const;
+	Race getRace() const;
 	string whatRace() const;
 	int getHP() const;
 	int getMP() const;
@@ -24,13 +30,8 @@ public:
 	//abstraction class method
 	void virtual Atack() const = 0;
 private:
-	RACE race;
+	Race race;
 	string name;
 	int hitPoints, magicPoints;
 };
-
-
-enum RACE {};
-
-
 #endif // !PLAYER_H
