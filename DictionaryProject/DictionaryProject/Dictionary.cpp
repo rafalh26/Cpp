@@ -1,7 +1,28 @@
 #include "Dictionary.h"
 
-void Dictionary::setWord(const std::string& userInputKey,const std::string& userInputDef) 
+void Dictionary::setWord(string& userInputKey, string& userInputDef) 
 {
 	myDictionary.insert({ userInputKey, userInputDef });
-	int main();
+	cout << "input saved" << endl;
+}
+
+string Dictionary::getWord(string& userInputKey)
+{		
+	string result ="not found";
+	for (auto i : myDictionary)
+	{
+		if (i.first == userInputKey)
+		{
+			return result = i.first + " " + i.second;
+		}
+	}
+	return result;
+}
+
+void Dictionary::printAll() const
+{
+	for (auto i : myDictionary)
+	{
+		cout << i.first << " " << i.second << endl;
+	}
 }

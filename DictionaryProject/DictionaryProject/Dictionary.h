@@ -4,12 +4,17 @@
 #include <string>
 #include <iostream>
 
+using namespace std;
+
 class Dictionary
 {
 public:
-	void setWord(const std::string& userInput,const std::string& userInputDef);
+	void setWord(string& userInputKey, string& userInputDef);
+	void printAll() const;
+
+	string getWord(string& userInputKey);
 private:
-	std::map<std::string, std::string> myDictionary;
+	map<string, string> myDictionary;
 };
 
 #endif // !DICTIONARY_H

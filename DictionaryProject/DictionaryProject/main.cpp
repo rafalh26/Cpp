@@ -5,71 +5,79 @@
 
 using namespace std;
 
-void addWord();
-void findWord();
-void printAll();
-void mainMenu();
+void mainMenu(Dictionary& dictionaryObj);
+void addWord(Dictionary& dictionaryObj);
+void findWord(Dictionary& dictionaryObj);
+void printData(Dictionary& dictionaryObj);
 
 int main()
 {
-	mainMenu();
+	Dictionary newDictionary;
+	mainMenu(newDictionary);
 
-
-}
-
-
-void mainMenu()
-{
-	int input = 0;
-	cout << "1.) Add word to dictionary\n";
-	cout << "2.) Find word in dictionary\n";
-	cout << "3.) Print all words in dictionary\n";
-	cout << "0.) Exit\n";
 	
-	cin >> input;
-	cout << endl;
 
-	switch (input)
-	{
-	case 1:
-		addWord();
-		break;
-	case 2:
-		findWord();
-		break;
-	case 3:
-		printAll();
-		break;
-	case 0:
-		cout << "Program done!\n";
-		break;
-	default:
-		cout << "Wrong choice choose 1,2,3 or 0 to exit\n";
-		mainMenu();
-	}
+	return 0;
 }
-void addWord()
+
+
+void mainMenu(Dictionary& dictionaryObj)
+{
+	int input = 9;
+	while (input != 0)
+	{
+
+		cout << "1.) Add word to dictionary\n";
+		cout << "2.) Find word in dictionary\n";
+		cout << "3.) Print all words in dictionary\n";
+		cout << "0.) Exit\n";
+		cin >> input;
+
+		if (input!= 1 && input!= 2 && input!=3 && input!=0)
+		{
+		cout << "error choose 1,2,3 or 0 for exit" << endl;
+		}
+
+
+		if (input == 1)
+		{
+			addWord(dictionaryObj);
+		}
+		else if (input == 2)
+		{
+			findWord(dictionaryObj);
+		}
+		else if (input == 3)
+		{
+			printData(dictionaryObj);
+		}
+		
+	}
+	cout << "Program Done!";
+}
+void addWord(Dictionary& dictionaryObj)
 {
 	string userInputKey, userInputDef;
-	cout << "section 1.) add word to dictionary" << endl;
+	cout << "Add word to dictionary" << endl;
 	cin >> userInputKey;
-	cout <<"Ur word input: "<< userInputKey << endl;
+	cin.get();
+
 	cout << "What definition U want to provide for that word: " << endl;
 	getline(cin, userInputDef);
-	cin.get();
-	cout << "Ur def input is: " << endl;
 
-	Dictionary newWord;
-	newWord.setWord(userInputKey,userInputDef);
-	mainMenu();
+	dictionaryObj.setWord(userInputKey,userInputDef);
 }
-void findWord()
+void findWord(Dictionary& dictionaryObj)
 {
-	std::cout << "test find word\n";
-	mainMenu();
+	cout << "What word are U looking for?: " << endl;
+	string userInputKey;
+	cin >> userInputKey;
+	cin.get();
+
+	cout<< dictionaryObj.getWord(userInputKey)<<endl;
 }
-void printAll()
+void printData(Dictionary& dictionaryObj)
 {
 	std::cout << "test print all\n";
-	mainMenu();
+	dictionaryObj.printAll();
 }
