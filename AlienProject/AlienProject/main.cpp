@@ -27,13 +27,8 @@ int main()
 
 	cout << endl << endl;
 	cout << myAliens[0] << endl <<myAliens[1];
-
-
 	
-	cout << randomizer();
-
-
-
+	cout << randomizer() << endl;
 	
 	return 0;
 }

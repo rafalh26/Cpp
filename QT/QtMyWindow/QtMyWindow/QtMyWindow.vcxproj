@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{FC509673-0BA2-4292-8DFF-B22140BF29AA}</ProjectGuid>
+    <ProjectGuid>{A531ACD0-FD20-48A0-B48A-F7E6941A59E5}</ProjectGuid>
     <Keyword>QtVS_v303</Keyword>
     <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">10.0.18362.0</WindowsTargetPlatformVersion>
     <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">10.0.18362.0</WindowsTargetPlatformVersion>
@@ -91,15 +91,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="RenderArea.cpp" />
-    <QtRcc Include="QtWidgetsApplication1.qrc" />
-    <QtUic Include="QtWidgetsApplication1.ui" />
-    <QtMoc Include="QtWidgetsApplication1.h" />
-    <ClCompile Include="QtWidgetsApplication1.cpp" />
+    <ClCompile Include="DataWindow.cpp" />
+    <QtRcc Include="DataWindow.qrc" />
+    <QtRcc Include="QtMyWindow.qrc" />
+    <QtUic Include="DataWindow.ui" />
+    <QtUic Include="QtMyWindow.ui" />
+    <QtMoc Include="QtMyWindow.h" />
+    <ClCompile Include="QtMyWindow.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="RenderArea.h" />
+    <QtMoc Include="DataWindow.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

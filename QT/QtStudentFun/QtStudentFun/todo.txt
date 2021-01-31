@@ -1,0 +1,7 @@
+Person class1
+student subclass2
+buing books
+hello!
+teacher subclass2
+teaching
+hello! -> pure virtual my name is prof ... .
